@@ -1,0 +1,218 @@
+:root {
+  --main-color: rgba(0, 0, 0, 0.87);
+  --green: #008248;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  color: var(--main-color);
+}
+
+header {
+  height: 101px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06),
+    0 0 2px rgba(0, 0, 0, 0.07);
+  z-index: 3;
+  position: relative;
+}
+
+.container {
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 51px;
+  width: 51px;
+  margin-right: 4rem;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.left-section ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.left-section li a:hover,
+.find-store:hover {
+  color: var(--green);
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+li:nth-child(n + 2) {
+  padding-left: 2.4rem;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 50px;
+  padding: 7px 16px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.4s ease;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* .right-section a:nth-child(n+2){
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 50px;
+    padding: 7px 16px;
+    font-weight: 600;
+    text-align: center;
+    transition: all .4s ease;
+} */
+
+.find-store {
+  margin-right: 4rem;
+}
+
+.find-store i {
+  fill: var(--main-color);
+  padding-right: 0.8rem;
+  font-size: 2rem;
+}
+
+.right-section .sign-in {
+  margin-right: 1.6rem;
+}
+
+.sign-in:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.right-section .join-now {
+  color: white;
+  background-color: var(--main-color);
+}
+
+.right-section .join-now:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(0, 0, 0, 0.7);
+}
+
+/* ####### Main Section CSS Code Below ####### */
+
+.main-body {
+  z-index: 1;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+}
+
+.covid-section {
+  margin-bottom: 3.2rem;
+}
+
+.info-alert {
+  display: flex;
+  padding: 3.2rem 0;
+  justify-content: center;
+  text-align: center;
+  background-color: #d8e8e3;
+}
+
+.info-alert p {
+  max-width: 60%;
+  padding: 0 4.8rem;
+  line-height: 1.75;
+  font-size: 1.2rem;
+  color: #000;
+  margin: 0;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+.rewards,
+.chill {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.rewards > *,
+.chill > * {
+  flex: 1 1 50%;
+  min-width: 35vh;
+  margin-bottom: 3.2rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text h1 {
+  font-size: 50px;
+}
+
+.text p {
+  text-align: center;
+  width: 80%;
+  font-size: 24px;
+  letter-spacing: 8xp;
+  line-height: 1.5;
+}
+
+.rewards .text {
+  background-color: #f1f8f6;
+}
+
+.chill .text {
+  background-color: #f2f0eb;
+}
+
+.text > div {
+  margin-top: 3.2rem;
+  margin-bottom: 2rem;
+}
+
+.uber-eats-section {
+  display: flex;
+}
